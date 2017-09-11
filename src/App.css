@@ -27,14 +27,13 @@
   width:300px;
   display:flex;
   margin: auto;
- 
 }
 
 .square{
 height: 100px;
 width: 100px;
-border: solid 1px black;
 text-align: center;
+
 }
 
 .button{
@@ -42,6 +41,7 @@ text-align: center;
   width: 60px;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 60px;
 }
 
