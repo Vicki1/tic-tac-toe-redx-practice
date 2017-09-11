@@ -8,14 +8,15 @@ class Square1 extends Component{
     
 render(){
     console.log(this.props);
+
    if(this.props.territory){
         return(
-            <div id='square1Taken'>{this.props.territory}</div>
+            <div className='square territory square1'>{this.props.territory}</div>
         )
    }
        console.log(this.props)
         return(
-        <div id='square1Free'><button id='square1Button' onClick={()=>this.props.turnTaken(this.props,'square1')}>{this.props.whosTurn}</button></div>
+        <div className='square square1'><button className=' button square1Button' onClick={()=>this.props.turnTaken(this.props,'square1')}>{this.props.whosTurn}</button></div>
     )
     
 
@@ -26,7 +27,7 @@ render(){
 function mapStateToProps(state){
   
     return{
-       territory: state.board.square1,
+       territory: state.square1,
        whosTurn: state.whosTurn,
 
     };

@@ -22,3 +22,40 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.row{
+  width:300px;
+  display:flex;
+  margin: auto;
+ 
+}
+
+.square{
+height: 100px;
+width: 100px;
+border: solid 1px black;
+text-align: center;
+}
+
+.button{
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.territory{
+   height: 60px;
+  width: 60px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+
+
+
+
+

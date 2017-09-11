@@ -10,12 +10,12 @@ render(){
     console.log(this.props);
    if(this.props.territory){
         return(
-            <div id='square5Taken'>{this.props.territory}</div>
+            <div className='square territory square5'>{this.props.territory}</div>
         )
    }
        console.log(this.props)
         return(
-        <div id='square5Free'><button id='square5Button' onClick={()=>this.props.turnTaken(this.props,'square5')}>{this.props.whosTurn}</button></div>
+        <div className='square square5'><button className='button square5Button' onClick={()=>this.props.turnTaken(this.props,'square5')}>{this.props.whosTurn}</button></div>
     )
     
 
@@ -26,7 +26,7 @@ render(){
 function mapStateToProps(state){
     console.log(state);
     return{
-       territory: state.board.square5,
+       territory: state.square5,
        whosTurn: state.whosTurn,
 
     };

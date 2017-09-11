@@ -1,7 +1,6 @@
 
 var initialState={
-        whosTurn: 'x',
-       board: { 
+        whosTurn: 'x', 
         square1: '',
         square2: '',
         square3: '',
@@ -11,7 +10,6 @@ var initialState={
         square7: '',
         square8: '',
         square9: '',
-       }
     }
 
 export default function boardReducer(state=initialState,action){
@@ -19,9 +17,7 @@ export default function boardReducer(state=initialState,action){
         
         case 'X_WENT':
         console.log(state);
-            return Object.assign({},state,{board:{
-                [action.payload]:'x'}, 
-                whosTurn: 'o' });
+            return Object.assign({},state,{[action.payload]:'x', whosTurn: 'o' });
                 
             
                
@@ -32,9 +28,7 @@ export default function boardReducer(state=initialState,action){
             //     whosTurn: 'o' });
         
         case 'O_WENT':
-            return Object.assign({},state,{board:{
-                [action.payload]:'o'}, 
-                whosTurn: 'x' });
+            return Object.assign({},state,{[action.payload]:'o', whosTurn: 'x' });
        
         
         default:

@@ -22,15 +22,21 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Square1/>
-        <Square2/>
-        <Square3/>
-        <Square4/>
-        <Square5/>
-        <Square6/>
-        <Square7/>
-        <Square8/>
-        <Square9/>
+        <div className="row">
+          <Square1/>
+          <Square2/>
+          <Square3/>
+        </div>
+         <div className="row">
+          <Square4/>
+          <Square5/>
+          <Square6/>
+        </div>
+        <div className="row">
+          <Square7/>
+          <Square8/>
+          <Square9/>
+          </div>
       </div>
     );
   }
